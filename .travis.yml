@@ -4,7 +4,7 @@ python:
 before_install:
 - openssl aes-256-cbc -K $encrypted_ae31eb0ebfd6_key -iv $encrypted_ae31eb0ebfd6_iv
   -in secrets.tar.enc -out secrets.tar -d
-- tar xvfz secrets.tar
+- tar xvf secrets.tar
 install:
 - pip install -r requirements.txt
 script:
